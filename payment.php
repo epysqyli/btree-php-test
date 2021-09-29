@@ -1,7 +1,5 @@
 <?php
-require 'boot.php';
-
-// print_r($_POST);
+require './gateway.php';
 
 if (empty($_POST['payment_method_nonce'])) {
   header('location: index.php');
