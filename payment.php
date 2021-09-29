@@ -9,6 +9,7 @@ if (empty($_POST['payment_method_nonce'])) {
 
 $result = $gateway->transaction()->sale([
   'amount' => $_POST['amount'],
+  'merchantAccountId' => 'randomId1234',
   'paymentMethodNonce' => $_POST['payment_method_nonce'],
   'customer' => [
     'firstName' => $_POST['firstName'],
