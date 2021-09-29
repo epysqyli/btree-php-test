@@ -29,7 +29,7 @@
 
   <script>
     const form = document.getElementById('payment-form');
-    
+
     const getToken = async () => {
       const req = await fetch("/btree/token.php");
       const token = await req.json();
@@ -44,14 +44,15 @@
             document.getElementById('nonce').value = payload.nonce;
             form.submit();
           }).catch(error => {
-            throw error
+            throw error;
           });
         })
       }).catch(error => {
-        //
+        console.log(error);
       })
     }
 
+    // fire getToken on DOMContentLoaded
     document.addEventListener('DOMContentLoaded', () => {
       getToken();
     });
