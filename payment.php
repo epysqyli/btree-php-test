@@ -1,7 +1,7 @@
 <?php
 require 'boot.php';
 
-print_r($_POST);
+// print_r($_POST);
 
 if (empty($_POST['payment_method_nonce'])) {
   header('location: index.php');
@@ -55,10 +55,6 @@ if ($result->success === true) {
 
     <label for="status" class="heading">Status</label><br>
     <input type="text" disabled='disable' name="amount" id="amount" value="Successful"><br><br>
-
-    <div id="dropin-container"></div>
-    <br><br>
-    <button type="submit">Pay with Braintree</button>
   </form>
 </body>
 
