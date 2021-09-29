@@ -1,6 +1,7 @@
 <?php
-
 require 'boot.php';
+
+print_r($_POST);
 
 if (empty($_POST['payment_method_nonce'])) {
   header('location: index.php');
@@ -14,7 +15,7 @@ $result = $gateway->transaction()->sale([
     'lastName' => $_POST['lastName'],
   ],
   'options' => [
-    'submitForSettlement' => true
+    'submitForSettlement' => True
   ]
 ]);
 
