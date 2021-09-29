@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label.heading {
+  font-weight: 600;
+}
+
+.payment-form {
+  width: 300px;
+  margin: 5vh auto;
+  padding: 10px;
+  border: 1px #333 solid;
+  text-align: center;
+}
