@@ -52,7 +52,7 @@ if ($result->success === true) {
     <input type="text" disabled='disable' name="amount" id="amount" value="<?php echo $result->transaction->amount . " " . $result->transaction->currencyIsoCode; ?>"><br><br>
 
     <label for="status" class="heading">Status</label><br>
-    <input type="text" disabled='disable' name="amount" id="amount" value="Successful"><br><br>
+    <input type="text" disabled='disable' name="amount" id="amount" value="Successful" class="success"><br><br>
   </form>
 </body>
 
