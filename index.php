@@ -33,6 +33,8 @@
     const getToken = async () => {
       const req = await fetch("/btree/token.php");
       const token = await req.json();
+      
+      // call braintree function
       braintree.dropin.create({
         authorization: token,
         container: document.getElementById('dropin-container'),
