@@ -1,3 +1,3 @@
 # Braintree Sandbox Integration
 
-Example of sandbox braintree payment flow in php
+Braintree payment flow in plain php - sandbox mode
